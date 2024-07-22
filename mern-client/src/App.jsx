@@ -5,9 +5,10 @@ import { Outlet } from 'react-router-dom'
 import { AuthContext } from './contexts/AuthProvider'
 import Navbar from './pages/shared/Navbar'
 import FooterMain from './pages/shared/FooterMain'
+import axios from 'axios'
 
 function App() {
-
+axios.post('https://full-stack-gold-nu.vercel.app/')
   const {user} = useContext(AuthContext)
   return (
     <>
